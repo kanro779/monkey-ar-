@@ -65,11 +65,11 @@
 
     // 見た目調整（必要ならここだけ編集）
     const FIT = {
-      widthByEye: 2.6,     // 両目外端の距離 × 係数 → マスクの幅
-      aspect:     1.000000,    // mask.png の縦横比（高さ/幅）※自動で埋め込み
-      offsetY:    0.28,    // 両目中点から下方向へのオフセット（正で下）
-      offsetX:    0.00     // 左右オフセット（正で右）
-    };
+  widthByEye: 3.8,   // ← 2.6から大きく。猿の顔が確実に見える
+  aspect: 1.0,       // mask.pngは正方形だから1.0
+  offsetY: 0.1,      // まずは少し上めに。0.28→0.1
+  offsetX: 0.0
+}
 
     async function loop(){
       if(!ready) return;
