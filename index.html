@@ -64,10 +64,10 @@
     function dist(a,b){ return Math.hypot(a.x-b.x, a.y-b.y); }
 
     // 見た目調整（必要ならここだけ編集）
-    const FIT = {
-  widthByEye: 3.8,   // ← 2.6から大きく。猿の顔が確実に見える
-  aspect: 1.0,       // mask.pngは正方形だから1.0
-  offsetY: 0.1,      // まずは少し上めに。0.28→0.1
+   const FIT = {
+  widthByEye: 4.8, // 3.8→4.8（さらに大きく）
+  aspect: 1.0,
+  offsetY: 0.05,   // 0.1で上すぎたら0.2、下すぎたら0.0〜-0.05
   offsetX: 0.0
 }
 
